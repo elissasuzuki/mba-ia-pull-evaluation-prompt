@@ -7,8 +7,12 @@ langchain-community==0.3.13
 langsmith==0.2.7
 
 # LLM Providers
+# langchain-openai: kept because evaluate.py references it, but OpenAI is replaced
+# in this project by Ollama (local) and Gemini (cloud).
 langchain-openai==0.2.14
 langchain-google-genai==2.0.8
+# langchain-ollama: local open-source model runner, replaces OpenAI as the generation provider
+langchain-ollama>=0.2.0
 
 # Utilities
 python-dotenv==1.0.1
